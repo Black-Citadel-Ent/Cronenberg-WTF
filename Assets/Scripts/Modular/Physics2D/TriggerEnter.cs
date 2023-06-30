@@ -3,7 +3,7 @@ using UnityEngine;
 
 namespace Modular.Physics2D
 {
-    [AddComponentMenu("Modular/Physics 2D/Trigger Enter")]
+    [AddComponentMenu("Modular/2D Physics/Trigger Enter")]
     public class TriggerEnter : Attachment
     {
         [SerializeField] private LayerMask layer;

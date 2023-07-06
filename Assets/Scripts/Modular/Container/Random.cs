@@ -13,7 +13,7 @@ namespace Modular.Container
 
         public override float LoadLinkedFloat(string valueName)
         {
-            if (valueName.Equals("Value"))
+            if (valueName.Equals(LinkedFloatNames[0]))
                 return _value;
             return base.LoadLinkedFloat(valueName);
         }

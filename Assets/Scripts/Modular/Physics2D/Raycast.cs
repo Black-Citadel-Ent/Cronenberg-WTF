@@ -17,7 +17,7 @@ namespace Modular.Physics2D
 
         public override float LoadLinkedFloat(string valueName)
         {
-            if (valueName.Equals("Distance"))
+            if (valueName.Equals(LinkedFloatNames[0]))
             {
                 if (!_lasthit || !_lasthit.collider)
                     return float.PositiveInfinity;
@@ -29,7 +29,7 @@ namespace Modular.Physics2D
 
         public override bool LoadLinkedBool(string valueName)
         {
-            if (valueName.Equals("Hit"))
+            if (valueName.Equals(LinkedBoolNames[0]))
                 return _lasthit && _lasthit.collider;
             return base.LoadLinkedBool(valueName);
         }
@@ -37,10 +37,7 @@ namespace Modular.Physics2D
 
         private void FixedUpdate()
         {
-            var dir = (direction.Vector2Value - origin.Vector2Value).normalized;
-            _lasthit = UnityEngine.Physics2D.Raycast(origin.Vector2Value, dir, distance.FloatValue, layers);
-            if(_lasthit.collider)
-                print($"Gound found at dist {_lasthit.distance}");
+            _lasthit = UnityEngine.Physics2D.Raycast(origin.Vector2Value, direction.Vector2Value, distance.FloatValue, layers);
         }
     }
 }

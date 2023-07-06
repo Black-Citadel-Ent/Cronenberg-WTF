@@ -11,7 +11,7 @@ namespace Modular.UnityObjects
 
         public override float LoadLinkedFloat(string valueName)
         {
-            if (valueName.Equals("Time"))
+            if (valueName.Equals(LinkedFloatNames[0]))
                 return _fixedTime;
             return base.LoadLinkedFloat(valueName);
         }

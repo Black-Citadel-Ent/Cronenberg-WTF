@@ -14,7 +14,7 @@ namespace Modular.Physics2D
 
         public override bool LoadLinkedBool(string valueName)
         {
-            if (valueName.Equals("Touching"))
+            if (valueName.Equals(LinkedBoolNames[0]))
                 return _touching;
             return base.LoadLinkedBool(valueName);
         }

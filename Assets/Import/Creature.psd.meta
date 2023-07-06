@@ -16,7 +16,7 @@ ScriptedImporter:
   textureImporterSettings:
     alphaSource: 1
     mipMapMode: 0
-    enableMipMap: 1
+    enableMipMap: 0
     fadeOut: 0
     borderMipMap: 0
     mipMapsPreserveCoverage: 0
@@ -55,7 +55,7 @@ ScriptedImporter:
     flipbookColumns: 0
     ignorePngGamma: 0
     cookieMode: 0
-    filterMode: 1
+    filterMode: 0
     aniso: 1
     mipBias: 0
     wrapU: 0
@@ -107,9 +107,9 @@ ScriptedImporter:
       serializedVersion: 2
       x: 4
       y: 4
-      width: 230
-      height: 200
-    spriteID: b93e9a0cf40be42bbaeaa765a0d3158c
+      width: 203
+      height: 151
+    spriteID: 26e7a135b23594fc4aed7e32aa505926
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -118,7 +118,7 @@ ScriptedImporter:
     edges: []
     tessellationDetail: 0
     uvTransform: {x: 4, y: 4}
-    spritePosition: {x: 10, y: 0}
+    spritePosition: {x: 23, y: 25}
   - name: Baby
     originalName: 
     pivot: {x: 0.5, y: 0.5}
@@ -127,7 +127,7 @@ ScriptedImporter:
     rect:
       serializedVersion: 2
       x: 4
-      y: 359
+      y: 310
       width: 81
       height: 85
     spriteID: 8e53fcbc9593f439c852e1c393f810ec
@@ -138,7 +138,7 @@ ScriptedImporter:
     indices: 
     edges: []
     tessellationDetail: 0
-    uvTransform: {x: 4, y: 359}
+    uvTransform: {x: 4, y: 310}
     spritePosition: {x: 84, y: 58}
   - name: Young
     originalName: 
@@ -148,7 +148,7 @@ ScriptedImporter:
     rect:
       serializedVersion: 2
       x: 4
-      y: 212
+      y: 163
       width: 163
       height: 139
     spriteID: 696ebcf5bc08e425a977d88f33c934c7
@@ -159,7 +159,7 @@ ScriptedImporter:
     indices: 
     edges: []
     tessellationDetail: 0
-    uvTransform: {x: 4, y: 212}
+    uvTransform: {x: 4, y: 163}
     spritePosition: {x: 43, y: 31}
   rigSpriteImportData:
   - name: Adult
@@ -306,8 +306,8 @@ ScriptedImporter:
     spriteName: Adult
     isGroup: 0
     parentIndex: -1
-    spriteID: b93e9a0cf40be42bbaeaa765a0d3158c
-    layerID: 8
+    spriteID: 26e7a135b23594fc4aed7e32aa505926
+    layerID: 9
     mosaicPosition: {x: 4, y: 4}
     flatten: 0
     isImported: 1
@@ -318,7 +318,7 @@ ScriptedImporter:
     parentIndex: -1
     spriteID: 8e53fcbc9593f439c852e1c393f810ec
     layerID: 7
-    mosaicPosition: {x: 4, y: 359}
+    mosaicPosition: {x: 4, y: 310}
     flatten: 0
     isImported: 1
     isVisible: 1
@@ -328,7 +328,7 @@ ScriptedImporter:
     parentIndex: -1
     spriteID: 696ebcf5bc08e425a977d88f33c934c7
     layerID: 6
-    mosaicPosition: {x: 4, y: 212}
+    mosaicPosition: {x: 4, y: 163}
     flatten: 0
     isImported: 1
     isVisible: 1

@@ -5,7 +5,7 @@ namespace Modular.Motion2D
     [AddComponentMenu("Modular/2D Motion/Acceleration")]
     public class Acceleration : Attachment
     {
-        [SerializeField] private Vector2 acceleration;
+        [SerializeField] private Vector2Link acceleration;
         [SerializeField] private BoolLink reset;
         
         public override string[] LinkedVector2Names => new[] { "Velocity" };
@@ -14,7 +14,7 @@ namespace Modular.Motion2D
 
         public override Vector2 LoadLinkedVector2(string valueName)
         {
-            if (valueName.Equals("Velocity"))
+            if (valueName.Equals(LinkedVector2Names[0]))
                 return _velocity;
             return base.LoadLinkedVector2(valueName);
         }
@@ -24,7 +24,7 @@ namespace Modular.Motion2D
             if(reset.BoolValue)
                 _velocity = Vector2.zero;
             else
-                _velocity += acceleration * Time.deltaTime;
+                _velocity += acceleration.Vector2Value * Time.deltaTime;
         }
     }
 }
